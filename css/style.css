@@ -329,20 +329,13 @@
     height: 100%;
     padding: 20px;
     justify-content: end;
-    bottom: -60px;
+    bottom: 0px;
     left: 0;
     transition: 0.5s;
     z-index: 3;
 }
 
 .donation .donation-item:hover .donation-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    justify-content: end;
-    bottom: 0px;
-    left: 0;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -419,6 +412,13 @@
     border-color: var(--bs-white);
     border-style: dotted;
     border-top: 0;
+    height: 400px;
+}
+
+@media (max-width: 1200px) {
+    .causes .causes-item .causes-content {
+        height: 300px;
+    }
 }
 
 .causes .causes-item .progress {
@@ -517,6 +517,30 @@
 
 .blog .blog-item .blog-img:hover .blog-info {
     background: rgba(0, 0, 0, 0.6);
+}
+
+.blog .blog-item .blog-content {
+    height: 300px;
+}
+
+.testimonial-item .border {
+    height: 350px;
+}
+
+.testimonial-item img {
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .testimonial-item .border {
+        height: 300px;
+    }
+
+    .testimonial-item img {
+        height: 300px;
+        object-fit: cover;
+    }
 }
 
 .blog .blog-item .blog-img .search-icon {
